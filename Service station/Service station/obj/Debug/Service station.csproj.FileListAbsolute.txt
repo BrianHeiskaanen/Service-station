@@ -1,0 +1,35 @@
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\bin\Debug\ServiceStation.mdf
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\bin\Debug\ServiceStation_log.ldf
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\bin\Debug\Service station.exe.config
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\bin\Debug\Service station.exe
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\bin\Debug\Service station.pdb
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service station.csproj.AssemblyReference.cache
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.AcceptOrder.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.AddingBrigade.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.AddingService.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.AddingSparePart.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.AdminMenu.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.Authorization.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.BrigadesCard.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.CancelOrder.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.ClientsCard.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.CompleteOrder.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.DeleteBrigade.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.DeleteService.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.DeleteSpareParts.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.InformationAboutBrigade.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.InformationAboutService.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.InformationAboutSparePart.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.InfromationAboutOrder.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.OrderProcessing.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.PasswordChange.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.PersonalInformation.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.Properties.Resources.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.Registration.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.RepairHelp.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.SendOrder.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.UserMenu.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service station.csproj.GenerateResource.cache
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service station.csproj.CoreCompileInputs.cache
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service station.exe
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service station.pdb
