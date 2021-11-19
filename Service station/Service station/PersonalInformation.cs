@@ -24,36 +24,43 @@ namespace Service_station
             SqlConnection connection = new SqlConnection(sql);
             connection.Open();
 
-            using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Login FROM Users WHERE id = @id", connection))
+            try
             {
-                cmd.Parameters.AddWithValue("@id", id);
-                login = cmd.ExecuteScalar().ToString();
-            }
+                using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Login FROM Users WHERE id = @id", connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    login = cmd.ExecuteScalar().ToString();
+                }
 
-            using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Name FROM Users WHERE id = @id", connection))
+                using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Name FROM Users WHERE id = @id", connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    name = cmd.ExecuteScalar().ToString();
+                }
+
+                using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Surname FROM Users WHERE id = @id", connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    surname = cmd.ExecuteScalar().ToString();
+                }
+
+                using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Patronymic FROM Users WHERE id = @id", connection))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    patronymic = cmd.ExecuteScalar().ToString();
+                }
+
+                connection.Close();
+
+                textBox1.Text = login;
+                textBox2.Text = name;
+                textBox3.Text = surname;
+                textBox4.Text = patronymic;
+                }
+            catch
             {
-                cmd.Parameters.AddWithValue("@id", id);
-                name = cmd.ExecuteScalar().ToString();
+                MessageBox.Show("Ошибка просмотра информации!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Surname FROM Users WHERE id = @id", connection))
-            {
-                cmd.Parameters.AddWithValue("@id", id);
-                surname = cmd.ExecuteScalar().ToString();
-            }
-
-            using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Patronymic FROM Users WHERE id = @id", connection))
-            {
-                cmd.Parameters.AddWithValue("@id", id);
-                patronymic = cmd.ExecuteScalar().ToString();
-            }
-
-            connection.Close();
-
-            textBox1.Text = login;
-            textBox2.Text = name;
-            textBox3.Text = surname;
-            textBox4.Text = patronymic;
         }
     }
 }

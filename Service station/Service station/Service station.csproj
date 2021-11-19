@@ -73,6 +73,12 @@
     <Compile Include="AddingBrigade.Designer.cs">
       <DependentUpon>AddingBrigade.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddingCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingCar.Designer.cs">
+      <DependentUpon>AddingCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddingService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     <Compile Include="DeleteBrigade.Designer.cs">
       <DependentUpon>DeleteBrigade.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCar.Designer.cs">
+      <DependentUpon>DeleteCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="DeleteService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +156,12 @@
     </Compile>
     <Compile Include="InformationAboutBrigade.Designer.cs">
       <DependentUpon>InformationAboutBrigade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationAboutCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationAboutCars.Designer.cs">
+      <DependentUpon>InformationAboutCars.cs</DependentUpon>
     </Compile>
     <Compile Include="InformationAboutService.cs">
       <SubType>Form</SubType>
@@ -213,6 +231,9 @@
     <EmbeddedResource Include="AddingBrigade.resx">
       <DependentUpon>AddingBrigade.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddingCar.resx">
+      <DependentUpon>AddingCar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddingService.resx">
       <DependentUpon>AddingService.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +261,9 @@
     <EmbeddedResource Include="DeleteBrigade.resx">
       <DependentUpon>DeleteBrigade.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCar.resx">
+      <DependentUpon>DeleteCar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteService.resx">
       <DependentUpon>DeleteService.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InformationAboutBrigade.resx">
       <DependentUpon>InformationAboutBrigade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationAboutCars.resx">
+      <DependentUpon>InformationAboutCars.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformationAboutService.resx">
       <DependentUpon>InformationAboutService.cs</DependentUpon>

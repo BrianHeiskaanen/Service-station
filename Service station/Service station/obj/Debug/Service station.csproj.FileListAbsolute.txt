@@ -33,3 +33,6 @@ C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Servic
 C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service station.csproj.CoreCompileInputs.cache
 C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service station.exe
 C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service station.pdb
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.AddingCar.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.DeleteCar.resources
+C:\Users\maksi\OneDrive\Desktop\Service station\Service station\obj\Debug\Service_station.InformationAboutCars.resources

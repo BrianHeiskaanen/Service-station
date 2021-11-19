@@ -15,8 +15,8 @@ namespace Service_station
     {
         string sql = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\maksi\OneDrive\Desktop\Service station\Service station\ServiceStation.mdf;Integrated Security=True";
 
-        SqlDataAdapter adapter = null;
-        DataTable table = null;
+        SqlDataAdapter adapter, adapter1 = null;
+        DataTable table, table1 = null;
 
         string id, userLogin;
 
@@ -118,6 +118,56 @@ namespace Service_station
             infromationAboutOrder.ShowDialog();
         }
 
+        private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form addingCar = new AddingCar(id);
+            addingCar.ShowDialog();
+        }
+
+        private void tabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(sql);
+            connection.Open();
+
+            using (SqlCommand cmd = new SqlCommand("SELECT TOP 1 Login FROM Users WHERE id = @id", connection))
+            {
+                cmd.Parameters.AddWithValue("@id", id);
+                userLogin = cmd.ExecuteScalar().ToString();
+            }
+
+            using (SqlCommand cmd = new SqlCommand("SELECT * FROM Applications WHERE UserLogin=@UserLogin; ", connection))
+            {
+                cmd.Parameters.AddWithValue("@UserLogin", userLogin);
+                adapter = new SqlDataAdapter(cmd);
+                table = new DataTable();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+            }
+
+            using (SqlCommand cmd = new SqlCommand("SELECT * FROM Cars WHERE UserID=@UserID; ", connection))
+            {
+                cmd.Parameters.AddWithValue("@UserID", id);
+                adapter1 = new SqlDataAdapter(cmd);
+                table1 = new DataTable();
+                adapter1.Fill(table1);
+                dataGridView2.DataSource = table1;
+            }
+
+            connection.Close();
+        }
+
+        private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form deleteCar = new DeleteCar();
+            deleteCar.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form infromationAboutCars = new InformationAboutCars(textBox2.Text);
+            infromationAboutCars.ShowDialog();
+        }
+
         private void UserMenu_Load(object sender, EventArgs e)
         {
             SqlConnection connection = new SqlConnection(sql);
@@ -136,6 +186,15 @@ namespace Service_station
                 table = new DataTable();
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;
+            }
+
+            using (SqlCommand cmd = new SqlCommand("SELECT * FROM Cars WHERE UserID=@UserID; ", connection))
+            {
+                cmd.Parameters.AddWithValue("@UserID", id);
+                adapter1 = new SqlDataAdapter(cmd);
+                table1 = new DataTable();
+                adapter1.Fill(table1);
+                dataGridView2.DataSource = table1;
             }
 
             connection.Close();
